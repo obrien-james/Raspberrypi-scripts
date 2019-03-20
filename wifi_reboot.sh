@@ -4,6 +4,8 @@
 # Add to Crontab crontab -e                                          #
 # Add */5 * * * * FILEPATH/FILENAME                                  #
 # Add /5 = 5 minutes                                                 #
+# Wifi Checker -- Can change /dev/null to /var/log/wifi_rebooter.log if want to output
+# */1 * * * * /usr/local/bin/wifi_reboot.sh 2>&1 | /usr/local/bin/timestamp.sh >> /dev/null
 ######################################################################
 # The IP for the server you wish to ping (8.8.8.8 is a public Google DNS server)
 SERVER=8.8.8.8
